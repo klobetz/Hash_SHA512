@@ -1,0 +1,19 @@
+﻿@page "/"
+@using System.Security.Cryptography
+
+<PageTitle>Home</PageTitle>
+<input @bind="passInput"/>
+<button type="submit" @onclick="GetHashPass">Hash</button>
+
+
+<div>@passHash</div>
+
+@code{
+    private string passInput = "";
+    private string passHash = "";
+
+    public void GetHashPass()
+    {
+
+    }
+}
